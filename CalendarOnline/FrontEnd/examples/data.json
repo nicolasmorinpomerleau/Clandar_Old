@@ -1,0 +1,68 @@
+{ 
+   "config":{ 
+      "url":"https://www.googleapis.com/calendar/v3/freeBusy",
+      "method":"POST",
+      "data":{ 
+         "timeMin":"2020-02-20T14:00:00-05:00",
+         "timeMax":"2020-02-20T20:00:00-05:00",
+         "items":[ 
+            { 
+               "id":"5shl6ad2n056oquag39idg64c0@group.calendar.google.com"
+            }
+         ]
+      },
+      "headers":{ 
+         "Accept-Encoding":"gzip",
+         "User-Agent":"google-api-nodejs-client/0.7.2 (gzip)",
+         "Authorization":"Bearer ya29.c.KqUBvQc9VXkfpaYOGwmBel9ZOO5fz_DlJhgAgAut98SBkqaKvzq9gu6mJQXshUbO8xXni1VU1LhLiAHFDish6W8fQvH39_yko0bHnsj0QyMAV7TBsmAuA1_xBvGXLX38rn87myrAfu2Qx4_ucszNV6pyX-UiddL1J9EujzyTFDEjIQ98Y_ZkOQgSGMKscGMeAXEEbkPpBCCh-83pz6xs04MOT8P85qFW",
+         "Content-Type":"application/json",
+         "Accept":"application/json"
+      },
+      "params":{ 
+
+      },
+      "body":"{\"timeMin\":\"2020-02-20T14:00:00-05:00\",\"timeMax\":\"2020-02-20T20:00:00-05:00\",\"items\":[{\"id\":\"5shl6ad2n056oquag39idg64c0@group.calendar.google.com\"}]}",
+      "responseType":"json"
+   },
+   "data":{ 
+      "kind":"calendar#freeBusy",
+      "timeMin":"2020-02-20T19:00:00.000Z",
+      "timeMax":"2020-02-21T01:00:00.000Z",
+      "calendars":{ 
+         "5shl6ad2n056oquag39idg64c0@group.calendar.google.com":{ 
+            "busy":[ 
+               { 
+                  "start":"2020-02-20T20:00:00Z",
+                  "end":"2020-02-20T21:00:00Z"
+               },
+               { 
+                  "start":"2020-02-20T21:30:00Z",
+                  "end":"2020-02-20T22:30:00Z"
+               },
+               { 
+                  "start":"2020-02-20T23:30:00Z",
+                  "end":"2020-02-21T00:30:00Z"
+               }
+            ]
+         }
+      }
+   },
+   "headers":{ 
+      "alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000",
+      "cache-control":"no-cache, no-store, max-age=0, must-revalidate",
+      "connection":"close",
+      "content-encoding":"gzip",
+      "content-type":"application/json; charset=UTF-8",
+      "date":"Thu, 20 Feb 2020 03:20:47 GMT",
+      "expires":"Mon, 01 Jan 1990 00:00:00 GMT",
+      "pragma":"no-cache",
+      "server":"GSE",
+      "transfer-encoding":"chunked",
+      "vary":"Origin, X-Origin",
+      "x-content-type-options":"nosniff",
+      "x-frame-options":"SAMEORIGIN",
+      "x-xss-protection":"1; mode=block"
+   },
+   "status":200,
+   "statusText":"OK"
+}
